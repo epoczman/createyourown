@@ -2,7 +2,7 @@
 title: "Machine Learning Approach in Detecting Poisonous Mushrooms"
 author: "Ewa Poczman"
 date: "17/06/2019"
-output: html_document
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
@@ -143,6 +143,7 @@ plot(varImp(train_rf), top=20)
 
 The two models are then tested on the test set to determine their ability to detect poisonous mushrooms. 
 
+If the decision whether a mushroom is edible or poisonous had to be made based on the result of a fair coin toss, on average ` round(mean(mushrooms_new$class=="p"), digits = 2)*100/2`% of cases would end in consumption of a poisonous mushroom.
 
 ## Model 1 
 
